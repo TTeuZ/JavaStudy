@@ -19,7 +19,7 @@ public enum DurationUnit {
     }
 
     public int getMultiplier() {
-        return multiplier;
+        return this.multiplier;
     }
 
     public static DurationUnit getByTextValue(String durationString) {

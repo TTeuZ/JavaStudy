@@ -1,8 +1,6 @@
 package rxwriter.prescription;
 
 public class DurationParser {
-
-
     /**
      * A duration string will typically have two parts:  an integer quantity
      * and a unit, i.e. "2 weeks" or "3 days", for which this method should
@@ -35,8 +33,7 @@ public class DurationParser {
     private static int parseValue(String valueString) {
         try {
             return Integer.parseInt(valueString);
-        }
-        catch (Throwable t) {
+        } catch (Throwable t) {
             return 0;
         }
     }
